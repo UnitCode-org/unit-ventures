@@ -24,7 +24,7 @@ const WordMarquee = forwardRef<HTMLDivElement, Props>(
   ({ className, ...props }, ref) => {
     return (
       <section
-        className={cn("relative w-full font-poppins", className)}
+        className={cn("relative w-full font-poppins mt-40", className)}
         ref={ref}
         {...props}
       >

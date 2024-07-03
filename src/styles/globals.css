@@ -18,4 +18,8 @@
   a {
     @apply hover:opacity-90;
   }
+
+  p {
+    color: #dedede;
+  }
 }

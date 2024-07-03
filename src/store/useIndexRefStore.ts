@@ -2,6 +2,8 @@ import { RefObject } from "react";
 import { create } from "zustand";
 
 type IndexRefStore = {
+  homeRef: RefObject<HTMLDivElement> | null;
+  setHomeRef: (ref: RefObject<HTMLDivElement>) => void;
   aboutRef: RefObject<HTMLDivElement> | null;
   setAboutRef: (ref: RefObject<HTMLDivElement>) => void;
   whyUsRef: RefObject<HTMLDivElement> | null;
@@ -13,6 +15,8 @@ type IndexRefStore = {
 };
 
 export const useIndexRefStore = create<IndexRefStore>((set) => ({
+  homeRef: null,
+  setHomeRef: (homeRef) => set({ homeRef }),
   aboutRef: null,
   setAboutRef: (aboutRef) => set({ aboutRef }),
   whyUsRef: null,

@@ -41,7 +41,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html
+      lang="en"
+      className="overflow-x-hidden"
+      style={{ background: "#0a0004", scrollBehavior: "smooth" }}
+    >
       <body className={inter.className}>{children}</body>
     </html>
   );

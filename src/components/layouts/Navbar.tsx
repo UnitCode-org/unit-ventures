@@ -9,14 +9,25 @@ import { useIndexRefStore } from "@/store/useIndexRefStore";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
 
 function Navbar() {
-  const { aboutRef, whyUsRef, teamRef, contactUsRef } = useIndexRefStore();
+  const { homeRef, aboutRef, whyUsRef, teamRef, contactUsRef } =
+    useIndexRefStore();
 
   return (
     <Sheet>
       <nav className="fixed left-0 top-0 z-[60] w-screen bg-black/10 backdrop-blur-md">
         <div className="mx-auto flex w-full max-w-screen-2xl items-center gap-x-8 px-8 py-6 font-poppins font-medium transition-all sm:px-16">
           <div className="mr-auto flex items-center gap-x-3">
-            <Link href="/" className="relative size-8">
+            <div
+              className="relative size-8 cursor-pointer"
+              onClick={() => {
+                if (homeRef && homeRef.current) {
+                  const top =
+                    homeRef.current.getBoundingClientRect().top +
+                    window.scrollY;
+                  window.scrollTo({ top, behavior: "smooth" });
+                }
+              }}
+            >
               <Image
                 src={unitVenturesIcon}
                 alt="Unit Network"
@@ -25,7 +36,7 @@ function Navbar() {
                 priority={true}
                 quality={100}
               />
-            </Link>
+            </div>
             {/* <h1 className="hidden text-xl sm:block">Unit Ventures</h1> */}
           </div>
           <div className="hidden items-center gap-x-14 md:flex">
