@@ -48,7 +48,7 @@ function Footer() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col justify-end gap-x-20 gap-y-6 text-right font-poppins text-lg text-[#C0C0C0] sm:flex-row">
+      <div className="flex flex-col justify-end gap-x-20 gap-y-6 text-right font-poppins text-base md:text-lg text-[#C0C0C0] sm:flex-row">
         <ul className="flex flex-col gap-y-1">
           <li>Home</li>
           <li>About</li>

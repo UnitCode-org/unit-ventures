@@ -8,9 +8,9 @@ type PillProps = {
 
 const Pill: React.FC<PillProps> = ({ children, color }) => {
   const baseStyles =
-    "inline-block px-3 py-1 border rounded-full text-sm font-poppins font-normal";
+    "inline-block px-3 py-1 border rounded-full text-xs md:text-sm font-poppins font-normal";
   const colorStyles = clsx({
-    "text-white border-white": color === "white",
+    "text-[#bababa] border-[#bababa]": color === "white",
     "text-black border-black": color === "black",
   });
 

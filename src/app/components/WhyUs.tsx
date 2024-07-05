@@ -29,22 +29,22 @@ const WhyUs = forwardRef<HTMLDivElement, Props>(
     return (
       <section
         className={cn(
-          "relative z-40 w-full overflow-hidden bg-white px-8 py-16 pb-56 sm:px-16 sm:py-24 sm:pb-56 lg:py-24 xl:py-32",
+          "relative z-40 w-full overflow-hidden bg-white px-8 py-24 pb-28 sm:px-16 lg:pt-24 lg:pb-28 xl:pt-32 xl:pb-36",
           className
         )}
         ref={whyUsRef}
         {...props}
       >
-        <div className="mx-auto max-w-screen-2xl px-32">
+        <div className="mx-auto max-w-screen-2xl xl:px-32">
           <div className="flex flex-col items-center justify-center gap-y-2 text-center md:pr-0 lg:items-start lg:text-start">
             <div className="flex items-center gap-x-2">
-              <Dot color="#781EDC" />
+              <Dot color="#781EDC" className="hidden lg:block" />
               <Pill color="black">WHY</Pill>
               <Pill color="black">US</Pill>
             </div>
-            <div className="flex items-center justify-between w-full">
+            <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-4">
               <h2
-                className="text-2xl text-black sm:text-5xl font-medium"
+                className="text-3xl text-black sm:text-5xl font-medium"
                 style={{ lineHeight: "1.375" }}
               >
                 Why choose Unit
@@ -59,7 +59,7 @@ const WhyUs = forwardRef<HTMLDivElement, Props>(
               </Button>
             </div>
             <div className="flex flex-col items-start w-full mt-8">
-              <div className="flex items-center gap-x-12 pb-8 pt-8 border-b w-full">
+              <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-12 pb-8 pt-8 border-b w-full">
                 <div className="w-8 h-8 flex items-center justify-center">
                   <Image
                     src="/images/icons/star.png"
@@ -68,15 +68,15 @@ const WhyUs = forwardRef<HTMLDivElement, Props>(
                     quality={100}
                     width={40}
                     height={40}
-                    className="w-8 h-auto"
+                    className="min-w-8 h-auto"
                   />
                 </div>
 
-                <h6 className="text-black text-xl font-medium">
+                <h6 className="text-black text-xl font-medium text-center md:text-left">
                   Proven track record of successful investments
                 </h6>
               </div>
-              <div className="flex items-center gap-x-12 pb-8 pt-8 border-b w-full">
+              <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-12 pb-8 pt-8 border-b w-full">
                 <div className="w-8 h-8 flex items-center justify-center">
                   <Image
                     src="/images/icons/arrow.png"
@@ -88,11 +88,11 @@ const WhyUs = forwardRef<HTMLDivElement, Props>(
                     className="w-6 h-auto"
                   />
                 </div>
-                <h6 className="text-black text-xl font-medium">
+                <h6 className="text-black text-xl font-medium text-center md:text-left">
                   Expertise in AI Technology
                 </h6>
               </div>
-              <div className="flex items-center gap-x-12 pb-8 pt-8 border-b w-full">
+              <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-12 pb-8 pt-8 border-b w-full">
                 <div className="w-8 h-8 flex items-center justify-center">
                   <Image
                     src="/images/icons/circles.png"
@@ -104,11 +104,11 @@ const WhyUs = forwardRef<HTMLDivElement, Props>(
                     className="w-7 h-auto"
                   />
                 </div>
-                <h6 className="text-black text-xl font-medium">
+                <h6 className="text-black text-xl font-medium text-center md:text-left">
                   Comprehensive support and resources for portfolio companies
                 </h6>
               </div>
-              <div className="flex items-center gap-x-12 pb-8 pt-8 w-full">
+              <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-12 pt-8 w-full">
                 <div className="w-8 h-8 flex items-center justify-center">
                   <Image
                     src="/images/icons/squares.png"
@@ -120,7 +120,7 @@ const WhyUs = forwardRef<HTMLDivElement, Props>(
                     className="w-7 h-auto"
                   />
                 </div>
-                <h6 className="text-black text-xl font-medium">
+                <h6 className="text-black text-xl font-medium text-center md:text-left">
                   Strong network of industry leaders and innovators
                 </h6>
               </div>

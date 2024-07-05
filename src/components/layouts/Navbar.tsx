@@ -37,9 +37,8 @@ function Navbar() {
                 quality={100}
               />
             </div>
-            {/* <h1 className="hidden text-xl sm:block">Unit Ventures</h1> */}
           </div>
-          <div className="hidden items-center gap-x-14 md:flex">
+          <div className="hidden items-center gap-x-14 lg:flex">
             <div
               className="cursor-pointer"
               onClick={() => {
@@ -95,7 +94,7 @@ function Navbar() {
             <Link href="https://www.unit.network/">Unit Network</Link>
           </div>
           <SheetTrigger>
-            <IoMenu className="block size-8 md:hidden" />
+            <IoMenu className="block size-8 lg:hidden" />
           </SheetTrigger>
         </div>
       </nav>

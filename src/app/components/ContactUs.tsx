@@ -30,7 +30,7 @@ const ContactUs = forwardRef<HTMLDivElement, Props>(
     return (
       <section
         ref={contactUsRef}
-        className={cn("relative w-full py-28 sm:py-48", className)}
+        className={cn("relative w-full py-24 sm:py-32 lg:py-40", className)}
         {...props}
       >
         <div className="flex flex-col items-center gap-y-6 text-center">

@@ -16,36 +16,43 @@ const teamMembers = [
     country: "Dubai",
     name: "Michael Healy",
     role: "Co-Founder",
+    link: "",
   },
   {
     country: "New York",
     name: "Ekaterina Miroshnikova",
     role: "Co-Founder",
+    link: "",
   },
   {
     country: "Hong Kong",
     name: "Roy Weissbach",
     role: "Associate",
+    link: "",
   },
   {
     country: "Hong Kong",
     name: "Marc David",
     role: "Associate",
+    link: "",
   },
   {
     country: "Hong Kong",
     name: "Jeff Chan",
     role: "Associate",
+    link: "",
   },
   {
     country: "London",
     name: "Lucy Coulden",
     role: "Associate",
+    link: "",
   },
   {
     country: "Singapore / Malaysia",
     name: "Sandra Lee",
     role: "Associate",
+    link: "",
   },
 ];
 
@@ -74,7 +81,7 @@ const Team = forwardRef<HTMLDivElement, Props>(
     return (
       <section
         className={cn(
-          "relative z-40 w-full overflow-hidden py-16 pb-56 sm:py-24 sm:pb-56 lg:py-24 xl:py-32",
+          "relative z-40 w-full overflow-hidden py-24 pb-28 lg:pt-24 lg:pb-28 xl:pt-32 xl:pb-36",
           className
         )}
         ref={teamRef}
@@ -82,15 +89,15 @@ const Team = forwardRef<HTMLDivElement, Props>(
       >
         <div className="mx-auto max-w-screen-2xl">
           <div className="flex flex-col items-center justify-center gap-y-2 text-center md:pr-0 lg:items-start lg:text-start">
-            <div className="flex items-center gap-x-2 px-8 xl:px-48">
+            <div className="flex items-center gap-x-2 px-8 sm:px-16 xl:px-48">
               <Dot color="#781EDC" />
               <Pill color="white">WHO</Pill>
               <Pill color="white">WE</Pill>
               <Pill color="white">ARE</Pill>
             </div>
-            <div className="grid grid-cols-2 gap-4 items-start w-full px-8 xl:px-48">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start w-full px-8 sm:px-16 xl:px-48">
               <h2
-                className="text-2xl sm:text-5xl font-medium min-w-96"
+                className="text-3xl sm:text-5xl font-medium xl:min-w-96"
                 style={{ lineHeight: "1.375" }}
               >
                 Meet the Unit Team
@@ -101,28 +108,31 @@ const Team = forwardRef<HTMLDivElement, Props>(
                 technology.
               </p>
             </div>
-            <div className="relative mt-20 w-full">
+            <div className="relative mt-12 md:mt-20 w-full">
               <div className="overflow-hidden relative" ref={emblaRef}>
                 <div className="flex">
-                  {teamMembers.map((member, index) => (
-                    <div
-                      key={member.name}
-                      className="flex-shrink-0 w-full sm:w-auto"
-                    >
+                  {teamMembers.map((member) => (
+                    <div key={member.name} className="flex-shrink-0 w-auto">
                       <TeamCard
                         country={member.country}
                         name={member.name}
                         role={member.role}
+                        link={member.link}
                       />
                     </div>
                   ))}
                 </div>
-                <div className="absolute right-0 top-0 h-full w-72 bg-gradient-to-l from-black via-black/90 to-transparent pointer-events-none z-10" />
+                <div className="absolute right-0 top-0 h-full w-64 bg-gradient-to-l from-black via-black/90 to-transparent pointer-events-none z-10 hidden lg:block" />
               </div>
               <button
-                className="absolute right-16 top-1/2 transform -translate-y-1/2 z-20 text-white"
+                className="absolute right-10 top-1/2 transform -translate-y-1/2 z-20 text-white hidden lg:block"
                 onClick={scrollNext}
               >
+                <IoChevronForwardCircleOutline size={40} />
+              </button>
+            </div>
+            <div className="flex w-full justify-end lg:hidden mt-4 mr-8">
+              <button className="text-white" onClick={scrollNext}>
                 <IoChevronForwardCircleOutline size={40} />
               </button>
             </div>
