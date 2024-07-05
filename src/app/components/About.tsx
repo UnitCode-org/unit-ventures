@@ -106,7 +106,7 @@ const About = forwardRef<HTMLDivElement, Props>(
             width={0}
             height={0}
             sizes="100vw"
-            className="pointer-events-none absolute -top-52 left-80 right-0 bottom-0 z-0 mx-auto w-[75rem] h-auto object-cover animate-pulse-slow hidden lg:block"
+            className="pointer-events-none absolute -top-52 2xl:-top-44 left-80 2xl:left-1/3 right-0 bottom-0 z-0 mx-auto w-[75rem] h-auto object-cover animate-pulse-slow hidden lg:block"
           />
         </motion.div>
         <Image
@@ -151,7 +151,7 @@ const About = forwardRef<HTMLDivElement, Props>(
         />
         <div className="absolute left-[-50vw] top-0 z-30 mx-auto mt-32 lg:mt-40 size-[200vw] rounded-full bg-[#0a0004]" />
 
-        <div className="relative z-50 xl:px-32 lg:mt-20">
+        <div className="relative z-50 xl:px-32 lg:mt-20 max-w-screen-2xl mx-auto">
           <div className="relative grid grid-cols-2 px-8 lg:hidden">
             <div className="h-32 mt-[12px] w-full border-b border-r border-unit-grey-10 rounded-br-2xl bg-transparent" />
             <div className="absolute left-1/2 top-0 size-3 rounded-full border border-unit-grey-10 bg-transparent transform -translate-x-1/2" />
@@ -173,9 +173,9 @@ const About = forwardRef<HTMLDivElement, Props>(
             <div className="absolute -left-1.5 -top-2 md:top-0 size-3 rounded-full border border-unit-grey-10 bg-unit-black-60" />
             <motion.div
               className="relative flex flex-col lg:flex-row items-start gap-x-20 -mt-5 bg-transparent"
-              //   initial={{ opacity: 0, x: -10 }}
-              //   whileInView={{ opacity: 1, x: 0 }}
-              //   transition={{ duration: 1 }}
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
             >
               <h2
                 className="text-2xl font-medium md:text-4xl min-w-56"
@@ -202,9 +202,9 @@ const About = forwardRef<HTMLDivElement, Props>(
             <div className="absolute -left-1.5 top-3 md:top-5 lg:top-12 size-3 rounded-full border border-unit-grey-10 bg-unit-black-60" />
             <motion.div
               className="relative flex flex-col lg:flex-row  items-start gap-x-20"
-              //   initial={{ opacity: 0, x: -10 }}
-              //   whileInView={{ opacity: 1, x: 0 }}
-              //   transition={{ duration: 1 }}
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
             >
               <h2
                 className="text-2xl font-medium md:text-4xl min-w-56"
@@ -228,9 +228,9 @@ const About = forwardRef<HTMLDivElement, Props>(
             <div className="absolute -left-1.5 top-3 md:top-5 lg:top-12 size-3 rounded-full border border-unit-grey-10 bg-unit-black-60" />
             <motion.div
               className="relative flex flex-col lg:flex-row  items-start gap-x-20"
-              //   initial={{ opacity: 0, x: -10 }}
-              //   whileInView={{ opacity: 1, x: 0 }}
-              //   transition={{ duration: 1 }}
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
             >
               <h2
                 className="text-2xl font-medium md:text-4xl min-w-56"
