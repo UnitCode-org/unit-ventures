@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { forwardRef } from "react";
 
 import { cn } from "@/lib/utils";
@@ -23,7 +24,12 @@ const Shaping = forwardRef<HTMLDivElement, Props>(
         ref={ref}
         {...props}
       >
-        <div className="mx-auto max-w-screen-2xl xl:px-32">
+        <motion.div
+          className="mx-auto max-w-screen-2xl xl:px-32"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="flex flex-col items-center justify-center gap-y-2 text-center md:pr-0 lg:items-start lg:text-start">
             <div className="flex items-center gap-x-2">
               <Dot color="#00FFC2" className="hidden lg:block" />
@@ -97,7 +103,7 @@ const Shaping = forwardRef<HTMLDivElement, Props>(
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     );
   }

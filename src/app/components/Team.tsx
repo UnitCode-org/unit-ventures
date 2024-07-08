@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { forwardRef, useRef, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
@@ -87,7 +88,12 @@ const Team = forwardRef<HTMLDivElement, Props>(
         ref={teamRef}
         {...props}
       >
-        <div className="mx-auto max-w-screen-2xl">
+        <motion.div
+          className="mx-auto max-w-screen-2xl"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="flex flex-col items-center justify-center gap-y-2 text-center md:pr-0 lg:items-start lg:text-start">
             <div className="flex items-center gap-x-2 px-8 sm:px-16 xl:px-48">
               <Dot color="#781EDC" />
@@ -137,7 +143,7 @@ const Team = forwardRef<HTMLDivElement, Props>(
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     );
   }
