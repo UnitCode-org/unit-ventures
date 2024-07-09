@@ -138,4 +138,6 @@ const WhyUs = forwardRef<HTMLDivElement, Props>(
   }
 );
 
+WhyUs.displayName = "WhyUs";
+
 export default WhyUs;

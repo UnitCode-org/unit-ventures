@@ -51,4 +51,6 @@ const WordMarquee = forwardRef<HTMLDivElement, Props>(
   }
 );
 
+WordMarquee.displayName = "WordMarquee";
+
 export default WordMarquee;

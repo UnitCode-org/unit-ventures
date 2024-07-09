@@ -109,4 +109,6 @@ const Shaping = forwardRef<HTMLDivElement, Props>(
   }
 );
 
+Shaping.displayName = "Shaping";
+
 export default Shaping;

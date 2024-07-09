@@ -78,4 +78,6 @@ const ContactUs = forwardRef<HTMLDivElement, Props>(
   }
 );
 
+ContactUs.displayName = "ContactUs";
+
 export default ContactUs;

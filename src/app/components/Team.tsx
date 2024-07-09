@@ -149,4 +149,6 @@ const Team = forwardRef<HTMLDivElement, Props>(
   }
 );
 
+Team.displayName = "Team";
+
 export default Team;
