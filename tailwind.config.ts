@@ -70,7 +70,7 @@ const config: Config = {
         "pulse-slow": "pulse 5s linear infinite",
       },
       height: {
-        128: "30rem",
+        128: "32rem",
       },
     },
   },
