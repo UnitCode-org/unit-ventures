@@ -25,7 +25,7 @@ const ContactUs = forwardRef<HTMLDivElement, Props>(
 
     useEffect(() => {
       setContactUsRef(contactUsRef);
-    }, []);
+    }, [setContactUsRef]);
 
     return (
       <section

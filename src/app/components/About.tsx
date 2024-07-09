@@ -21,7 +21,7 @@ const About = forwardRef<HTMLDivElement, Props>(
 
     useEffect(() => {
       setAboutRef(aboutRef);
-    }, []);
+    }, [setAboutRef]);
 
     return (
       <section

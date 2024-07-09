@@ -23,7 +23,7 @@ const WhyUs = forwardRef<HTMLDivElement, Props>(
 
     useEffect(() => {
       setWhyUsRef(whyUsRef);
-    }, []);
+    }, [setWhyUsRef]);
 
     const { contactUsRef } = useIndexRefStore();
 

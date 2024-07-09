@@ -22,7 +22,7 @@ const Hero = forwardRef<HTMLDivElement, Props>(
 
     useEffect(() => {
       setHomeRef(homeRef);
-    }, []);
+    }, [setHomeRef]);
 
     const { contactUsRef, aboutRef } = useIndexRefStore();
 
