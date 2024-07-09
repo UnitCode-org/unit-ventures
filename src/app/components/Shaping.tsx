@@ -50,7 +50,7 @@ const Shaping = forwardRef<HTMLDivElement, Props>(
                 below.
               </p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-20 mt-16 lg:mt-36">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-20 mt-16 lg:mt-36">
               <div className="w-full">
                 <Separator className="w-full bg-[#DEDEDE] block lg:hidden" />
                 <h3 className="font-medium text-2xl md:text-3xl mt-16 lg:mt-0">
