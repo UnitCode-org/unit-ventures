@@ -50,7 +50,7 @@ const teamMembers = [
     link: "",
   },
   {
-    country: "Singapore / Malaysia",
+    country: "Singapore",
     name: "Sandra Lee",
     role: "Associate",
     link: "",

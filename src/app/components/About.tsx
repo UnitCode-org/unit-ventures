@@ -169,7 +169,7 @@ const About = forwardRef<HTMLDivElement, Props>(
           </div>
 
           <div className="relative flex items-start gap-x-8 sm:gap-x-12 md:gap-x-16">
-            <div className="h-128 md:h-96 w-[1px] bg-unit-grey-10" />
+            <div className="h-96 md:h-96 w-[1px] bg-unit-grey-10" />
             <div className="absolute -left-1.5 -top-2 md:top-0 size-3 rounded-full border border-unit-grey-10 bg-unit-black-60" />
             <motion.div
               className="relative flex flex-col lg:flex-row items-start gap-x-20 -mt-5 bg-transparent"
