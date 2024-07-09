@@ -69,6 +69,9 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-slow": "pulse 5s linear infinite",
       },
+      height: {
+        128: "30rem",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
