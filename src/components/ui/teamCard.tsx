@@ -27,7 +27,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ country, name, role, link }) => {
       <div className="flex items-end justify-between">
         <p className="text-unit-grey-40 text-lg md:text-xl text-left">{role}</p>
         <div className="flex items-center gap-2">
-          <Link href={link} className="text-sm md:text-base">
+          <Link href={link} className="text-sm md:text-base" target="_blank">
             View
           </Link>
           <FaArrowRight style={{ rotate: "-45deg" }} />

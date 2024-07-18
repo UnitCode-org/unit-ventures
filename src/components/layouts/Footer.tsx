@@ -19,30 +19,35 @@ function Footer() {
           <Link
             href="https://www.instagram.com/unit.network"
             className="rounded-full border border-[#565656] p-3 sm:p-2"
+            target="_blank"
           >
             <FaInstagram className="mx-auto size-5 sm:size-3" />
           </Link>
           <Link
             href="https://t.me/unitfoundation"
             className="rounded-full border border-[#565656] p-3 sm:p-2"
+            target="_blank"
           >
             <FaTelegram className="mx-auto size-5 sm:size-3" />
           </Link>
           <Link
             href="https://www.facebook.com/theunitnetwork"
             className="rounded-full border border-[#565656] p-3 sm:p-2"
+            target="_blank"
           >
             <FaFacebook className="mx-auto size-5 sm:size-3" />
           </Link>
           <Link
             href="https://twitter.com/theunitnetwork"
             className="rounded-full border border-[#565656] p-3 sm:p-2"
+            target="_blank"
           >
             <FaXTwitter className="mx-auto size-5 sm:size-3" />
           </Link>
           <Link
             href="https://www.linkedin.com/company/theunitnetwork/"
             className="rounded-full border border-[#565656] p-3 sm:p-2"
+            target="_blank"
           >
             <FaLinkedin className="mx-auto size-5 sm:size-3" />
           </Link>
