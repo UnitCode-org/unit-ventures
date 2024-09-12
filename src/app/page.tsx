@@ -16,7 +16,7 @@ export default function Home() {
       <About />
       <WhyUs />
       <Shaping />
-      <Team />
+      {/* <Team /> */}
       <ContactUs />
     </Layout>
   );
